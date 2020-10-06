@@ -1,0 +1,6 @@
+name: Composer Project
+type: module
+description: 'LA-La-LA.'
+package: Custom
+version: 1.0
+core: 8.x
