@@ -11,9 +11,7 @@ echo 'push good'
 
 cd /var/www/podshik/composer_projects/web/
 git checkout master
-git pull origin master
+git pull origin master --allow-unrelated-histories
 echo 'pull good'
-git merge origin/dev
-echo 'good'
 git push origin origin master
 echo 'good pushing'
