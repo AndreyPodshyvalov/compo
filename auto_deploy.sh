@@ -1,12 +1,10 @@
 #!/bin/bash
-echo 'How old are you?'
+cd /var/www/podshik/composer_projects/web/
 
-read age
-
-if [ -z $age ]
-then
-    echo 'You can drink.'
-else
-    echo 'You are too young to drink.'
-fi
-
+# Отправляем изменения в ветку dev
+git checkout dev
+git add -A
+git commit -m "update dev"
+echo 'commit good'
+git push origin dev
+echo 'push good'
