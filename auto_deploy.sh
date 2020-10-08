@@ -1,6 +1,12 @@
 #!/bin/bash
-echo "hello"
-echo "branches created"
-git checkout testerok
-git pull origin dev
-echo "uploaded changes to testerok"
+echo 'How old are you?'
+
+read age
+
+if [ -z $age ]
+then
+    echo 'You can drink.'
+else
+    echo 'You are too young to drink.'
+fi
+
